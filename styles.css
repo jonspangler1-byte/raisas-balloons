@@ -187,7 +187,10 @@ a:hover { color: var(--pink); }
 .cta-band,
 .contact-page,
 .about-page,
-.portfolio-block {
+.portfolio-block,
+.towns-serve,
+.portfolio-invite,
+.faq-list {
   padding: 4.25rem 1.5rem;
 }
 
@@ -332,6 +335,7 @@ h3 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); margin-bottom: 0.5rem; }
 }
 .split img,
 .about-tease img,
+.about-tease-photo img,
 .about-page img {
   width: 100%;
   aspect-ratio: 1;
@@ -488,14 +492,16 @@ h3 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); margin-bottom: 0.5rem; }
     border-bottom: 1px solid var(--pink-soft);
   }
 }
-.contact-email {
+.contact-email,
+.contact-link {
   font-family: var(--font);
   letter-spacing: 0.03em;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
   text-decoration: none;
   color: var(--ink);
 }
+.contact-link:hover { color: var(--pink-deep); }
 .contact-place {
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -554,7 +560,14 @@ h3 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); margin-bottom: 0.5rem; }
   font-size: 0.72rem;
   letter-spacing: 0.04em;
   text-transform: none;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 0.85rem;
+}
+.footer-copy {
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0 auto 0.35rem;
+  color: var(--ink-soft);
 }
 .footer-logo {
   display: block;
@@ -639,3 +652,138 @@ body.lightbox-open { overflow: hidden; }
 @media (max-width: 700px) { .featured-grid { grid-template-columns: repeat(2, 1fr); } }
 .featured-grid .featured-wide { grid-column: 1 / -1; }
 .featured-grid .featured-wide img { aspect-ratio: auto; max-height: 720px; }
+
+
+/* Direct contact in the footer */
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.25rem;
+  margin: 0 0 1.15rem;
+}
+.footer-contact a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.footer-contact a:hover { color: var(--pink-deep); }
+
+/* Homepage package prices */
+.home-contact {
+  margin: 1.35rem 0 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+.home-contact a {
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: none;
+}
+.home-contact a:hover { color: var(--pink-deep); }
+
+.home-tiers {
+  list-style: none;
+  margin: 1.1rem 0 0.75rem;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem 1.25rem;
+}
+@media (min-width: 520px) {
+  .home-tiers { grid-template-columns: 1fr 1fr; }
+}
+.home-tiers li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.65rem 0.8rem;
+  background: var(--blush);
+  border: 1px solid rgba(240, 106, 176, 0.18);
+}
+.home-tiers span {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink);
+}
+.home-tiers strong {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--pink-deep);
+}
+.home-min {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+/* Towns we serve */
+.towns-serve {
+  background: var(--aqua-soft);
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+}
+.towns-serve .section-head { margin-bottom: 1.4rem; }
+.towns-list {
+  max-width: 52rem;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.85;
+  text-align: center;
+}
+.towns-serve-page {
+  max-width: none;
+}
+
+/* Portfolio invite on the home page (replaces the repeating gallery) */
+.portfolio-invite {
+  text-align: center;
+  background: var(--cream);
+  padding-top: 0.5rem;
+  padding-bottom: 3.5rem;
+}
+.portfolio-invite p {
+  margin: 0 auto 1.1rem;
+  color: var(--ink-soft);
+}
+
+/* Caption for the about-tease photo */
+.about-tease-photo {
+  margin: 0;
+}
+.about-tease-photo figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+/* FAQ */
+.faq-list {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 3.5rem;
+  background: var(--cream);
+}
+.faq-item {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--pink-soft);
+}
+.faq-item:first-child { border-top: 1px solid var(--pink-soft); }
+.faq-item h2 {
+  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+  margin-bottom: 0.55rem;
+}
+.faq-item p { color: var(--ink-soft); margin: 0; }
+.faq-note {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.town-name { white-space: nowrap; }

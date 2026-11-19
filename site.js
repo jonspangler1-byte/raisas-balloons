@@ -31,7 +31,7 @@
     index = (i + items.length) % items.length;
     var photo = items[index].querySelector("img");
     img.src = photo.src;
-    img.alt = photo.alt;
+    img.alt = photo.alt || "Balloon decoration photo";
     cap.textContent = photo.alt;
     box.hidden = false;
     document.body.classList.add("lightbox-open");
