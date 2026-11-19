@@ -626,3 +626,14 @@ body.lightbox-open { overflow: hidden; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Featured work grid on the home page */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 8px;
+}
+.featured-grid .gallery-item { padding: 0; border: 0; background: none; cursor: zoom-in; }
+.featured-grid img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px; }
+@media (max-width: 700px) { .featured-grid { grid-template-columns: repeat(2, 1fr); } }
