@@ -89,6 +89,58 @@
       </article>
     </section>
 
+    <section class="portfolio-block">
+      <h2 class="cat-title">Gallery</h2>
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-01.jpg" width="1080" height="1080" alt="Pink and white balloon arches around a Cielito Lindo backdrop at an outdoor tent party.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-02.jpg" width="1080" height="1080" alt="Close view of a pink, red, and white balloon garland at a tent party, with a decorative number one.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-03.jpg" width="1080" height="1080" alt="Another angle of the pink tent-party backdrop and balloon garlands.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-04.jpg" width="1080" height="1080" alt="Pink, white, and gold balloon garland with a painted backdrop of the Virgin Mary.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-10.jpg" width="1080" height="1080" alt="Pastel and metallic balloon wall with an Eiffel Tower cutout and birthday lettering.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-12.jpg" width="1080" height="1080" alt="Blue and yellow balloon garland with lemons and greenery around a Happy Birthday Indira backdrop with blue tile trim.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-09.jpg" width="1080" height="1080" alt="Olive and cream balloon garland beside a bridal backdrop that reads a tini bit closer to I do.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-13.jpg" width="1080" height="1080" alt="Pink, lavender, and cream balloon garland around a white arch backdrop that reads Bride to Be.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-06.jpg" width="1080" height="1080" alt="Yellow, orange, and pink balloon garland with greenery around a graduation backdrop.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-07.jpg" width="1080" height="1080" alt="Pink, white, and gold balloon arch around a graduation backdrop.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-08.jpg" width="1080" height="1080" alt="Outdoor graduation backdrop with a burgundy and white balloon garland and GRAD letter balloons.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-05.jpg" width="1080" height="1080" alt="Patriotic red, white, and blue balloon column with silver star balloons.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-11.jpg" width="1080" height="1080" alt="Baby-themed balloon column in blue, red, and white, topped with a baby foil balloon and a duck.">
+          </button>
+          <button type="button" class="gallery-item">
+            <img src="images/gallery-18.jpg" width="1080" height="1080" alt="Plum, coral, cream, and gold balloon garland with greenery around a lavender arch backdrop that reads Gina's next chapter.">
+          </button>
+        </div>
+        <button type="button" class="carousel-btn prev" aria-label="Previous photos">‹</button>
+        <button type="button" class="carousel-btn next" aria-label="Next photos">›</button>
+      </div>
+    </section>
+
     <div class="wave wave-blush" aria-hidden="true"></div>
 
     <section class="about-tease">
@@ -102,6 +154,16 @@
       </div>
     </section>
   </main>
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-backdrop" data-close="true"></div>
+    <button type="button" class="lightbox-close" data-close="true" aria-label="Close">×</button>
+    <button type="button" class="lightbox-prev" aria-label="Previous photo">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="images/gallery-01.jpg" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button type="button" class="lightbox-next" aria-label="Next photo">›</button>
+  </div>
   <footer class="site-footer">
     <nav class="footer-nav" aria-label="Footer">
       <a href="index.html">Home</a>
